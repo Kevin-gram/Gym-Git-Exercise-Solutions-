@@ -842,3 +842,113 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/Kevin-gram/Gym-Git-Exercise-Solutions-.git
    54526ec..0593f5a  ft/faq-page -> ft/faq-page
 
+
+//////////////////bundel 3 exercise 2//////////////////////
+
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/fa
+$ git branch ft/faq-page
+fatal: a branch named 'ft/faq-page' already exists
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git branch ft/home-page-redesign
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+M       README.md
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git checkout main
+error: Your local changes to the following files would be overwritten by checkout:
+        README.md
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git add .
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git commit -m "ft/home-page-redesign"
+[ft/home-page-redesign 61abd2d] ft/home-page-redesign
+ 1 file changed, 398 insertions(+)
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git push
+fatal: The current branch ft/home-page-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/home-page-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git push --set-upstream origin ft/home-page-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.32 KiB | 2.32 MiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/Kevin-gram/Gym-Git-Exercise-Solutions-/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/Kevin-gram/Gym-Git-Exercise-Solutions-.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git add .
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git commit -m "ft/home-page-redesign"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+Your branch is up to date with 'origin/ft/home-page-redesign'.
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git rebase main
+Current branch ft/home-page-redesign is up to date.
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ ls
+README.md  about.html  contact.html  home.html  services.html  team
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ vi home.html
+Z
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git add .
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git commit -m "rebase"
+[ft/home-page-redesign 80a855e] rebase
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/home-page-redesign)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 291 bytes | 291.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Kevin-gram/Gym-Git-Exercise-Solutions-.git
+   61abd2d..80a855e  ft/home-page-redesign -> ft/home-page-redesign
+
