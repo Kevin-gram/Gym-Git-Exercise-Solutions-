@@ -448,3 +448,301 @@ remote: Resolving deltas: 100% (11/11), done.
 To https://github.com/Kevin-gram/Gym-Exercise-.git
  + d9a4bb7...270b99f main -> main (forced update)
 
+
+
+///////////////////Bundel 5 exercise 1///////////////
+
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git branch ft/footer
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git chechout ft/footer
+git: 'chechout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git checkout ft/footer
+Switched to branch 'ft/footer'
+M       README.md
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/footer)
+$ vi home.html
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/footer)
+$  git add .
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/footer)
+$ git commit -m"new branch ft/footer"
+[ft/footer d747347] new branch ft/footer
+ 2 files changed, 78 insertions(+), 1 deletion(-)
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/footer)
+$ git push
+fatal: The current branch ft/footer has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/footer
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/footer)
+$ git push --set-upstream origin ft/footer
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.08 KiB | 553.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/Kevin-gram/Gym-Git-Exercise-Solutions-/pull/new/ft/footer
+remote:
+To https://github.com/Kevin-gram/Gym-Git-Exercise-Solutions-.git
+ * [new branch]      ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/footer)
+$ vi home.html
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/footer)
+$  git add .
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/footer)
+$ git push
+Everything up-to-date
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/footer)
+$ vi home.html
+Z
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/footer)
+$  git add  home.html
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/footer)
+$ git commit -m"new branch ft/footer SECOMD CHANGES "
+[ft/footer a6102ab] new branch ft/footer SECOMD CHANGES
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/footer)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 343 bytes | 343.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Kevin-gram/Gym-Git-Exercise-Solutions-.git
+   d747347..a6102ab  ft/footer -> ft/footer
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/footer)
+$  git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git branch ft/squashing
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git merge --squash ft/f
+ft/faq-page   ft/footer
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git merge --squash ft/footer
+Updating 270b99f..a6102ab
+Fast-forward
+Squash commit -- not updating HEAD
+ README.md | 77 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ home.html |  2 +-
+ 2 files changed, 78 insertions(+), 1 deletion(-)
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git commit -m"footer changes squashing"
+[main 5503693] footer changes squashing
+ 2 files changed, 78 insertions(+), 1 deletion(-)
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git checkout ft/s
+ft/service-redesign   ft/squashing
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git checkout ft/squashing
+Switched to branch 'ft/squashing'
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git merge --squash ft/footer
+Updating 270b99f..a6102ab
+Fast-forward
+Squash commit -- not updating HEAD
+ README.md | 77 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ home.html |  2 +-
+ 2 files changed, 78 insertions(+), 1 deletion(-)
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git commit -m"footer changes squashing"
+[ft/squashing 3f1d969] footer changes squashing
+ 2 files changed, 78 insertions(+), 1 deletion(-)
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git push origin ft/squashing
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.10 KiB | 564.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/Kevin-gram/Gym-Git-Exercise-Solutions-/pull/new/ft/squashing
+remote:
+To https://github.com/Kevin-gram/Gym-Git-Exercise-Solutions-.git
+ * [new branch]      ft/squashing -> ft/squashing
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=<remote>/<branch> ft/squashing
+
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git pull origin ft/squashing
+From https://github.com/Kevin-gram/Gym-Git-Exercise-Solutions-
+ * branch            ft/squashing -> FETCH_HEAD
+Already up to date.
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/squashing)
+$ ls
+README.md  about.html  imdex.html.html  services.html
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/squashing)
+$ ls
+README.md  about.html  index.html.html  services.html
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/squashing)
+$ ls
+README.md  about.html  index.html.html  services.html
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/squashing)
+$ ls
+README.md  about.html  index.html.html  services.html
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/squashing)
+$ mv index.html.html  index.html
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/squashing)
+$ ls
+README.md  about.html  index.html  services.html
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git add index.html
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git add .
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git status
+On branch ft/squashing
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    home.html -> index.html
+
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git commit -m"reanming hoe to index.html"
+[ft/squashing eef632e] reanming hoe to index.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename home.html => index.html (100%)
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git push
+fatal: The current branch ft/squashing has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/squashing
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/squashing)
+$ ^C
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git push --set-upstream origin ft/squashing
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 246 bytes | 246.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Kevin-gram/Gym-Git-Exercise-Solutions-.git
+   3f1d969..eef632e  ft/squashing -> ft/squashing
+branch 'ft/squashing' set up to track 'origin/ft/squashing'.
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ mv home.html  index.html
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git add .
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git commit -m"reanaming hoe to index.html"
+[main 4f75d3f] reanaming hoe to index.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename home.html => index.html (100%)
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.52 KiB | 777.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/Kevin-gram/Gym-Git-Exercise-Solutions-.git
+   270b99f..4f75d3f  main -> main
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ vi index.html
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git add .
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git commit -m"reanaming hoe to index.html"
+[main 96c8689] reanaming hoe to index.html
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 304 bytes | 304.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Kevin-gram/Gym-Git-Exercise-Solutions-.git
+   4f75d3f..96c8689  main -> main
+
