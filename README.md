@@ -444,3 +444,401 @@ Fast-forward
 ///////////////Bundel 3 exercise 1////////////
 
 
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git checkout ft/team-page
+error: pathspec 'ft/team-page' did not match any file(s) known to git
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git branch ft/team-page
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git checkout ft/team-page
+Switched to branch 'ft/team-page'
+M       README.md
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/team-page)
+$ vi team
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/team-page)
+$ vi team
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git add .
+warning: in the working copy of 'team', LF will be replaced by CRLF the next time Git touches it
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git commit -m'team.html page '
+[ft/team-page 0500274] team.html page
+ 2 files changed, 99 insertions(+)
+ create mode 100644 team
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git push
+fatal: The current branch ft/team-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/team-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git push --set-upstream origin ft/team-page
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.17 KiB | 1.17 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/Kevin-gram/Gym-Git-Exercise-Solutions-/pull/new/ft/team-page
+remote:
+To https://github.com/Kevin-gram/Gym-Git-Exercise-Solutions-.git
+ * [new branch]      ft/team-page -> ft/team-page
+branch 'ft/team-page' set up to track 'origin/ft/team-page'.
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git branch ft/contact-page
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ git checkout ft/team-page
+Switched to branch 'ft/team-page'
+Your branch is up to date with 'origin/ft/team-page'.
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git log
+commit 05002746c969b73965195bda7f3585f539440b91 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: kevin-gram <k.nyiringan@alustudent.com>
+Date:   Mon Apr 22 17:49:09 2024 +0200
+
+    team.html page
+
+commit 2dd984cece9dc2d28c58aa373d3a540c6c5e892e (origin/main, main, ft/contact-page)
+Merge: 61ba0f7 faeb0cc
+Author: Kevin_Nyiringango <116556392+Kevin-gram@users.noreply.github.com>
+Date:   Mon Apr 22 17:19:25 2024 +0200
+
+    Merge pull request #3 from Kevin-gram/ft/bundle-2
+
+    bundel 2 EXERCISE 1
+
+commit 61ba0f77ce49c7831812c0ff4bee3f8562131c9c
+Author: kevin-gram <k.nyiringan@alustudent.com>
+Date:   Mon Apr 22 17:09:48 2024 +0200
+
+    editing the services IN MAIN branch
+
+commit faeb0cc431c0f687021464c860dc0ded1c28e267 (origin/ft/bundle-2, ft/bundle-2)
+Author: kevin-gram <k.nyiringan@alustudent.com>
+Date:   Mon Apr 22 16:45:41 2024 +0200
+
+    bundel 2 EXERCISE 1
+
+commit 3a98acd433900307a95e05780b6058ba9e7100d3
+Merge: 081580f 8ffb5c5
+Author: MANZI Mike <48416679+MikeManzi@users.noreply.github.com>
+Date:   Mon Apr 22 16:38:41 2024 +0200
+
+    Merge pull request #1 from Kevin-gram/ft/bundle-2
+
+    bundel 2
+
+commit 8ffb5c567013cb7ac9e662701c76dcf61b4efb41
+Author: kevin-gram <k.nyiringan@alustudent.com>
+Date:   Mon Apr 22 16:26:25 2024 +0200
+
+    bundel 2
+
+commit 081580f8273a735b4223a95a29784d49761bdf8d
+Author: kevin-gram <k.nyiringan@alustudent.com>
+Date:   Mon Apr 22 16:11:59 2024 +0200
+
+    bundel 1 exercise 2
+
+commit c0b61e33fc9a48d7f421f0ba5b96d8086735a375 (dev)
+Author: kevin-gram <k.nyiringan@alustudent.com>
+Date:   Mon Apr 22 15:51:01 2024 +0200
+
+    ho& about us page
+
+commit d89dec71b1cc4efb2c4b992a38c545eb55931e0d
+Merge: 725597e cdc1ed4
+Author: kevin-gram <k.nyiringan@alustudent.com>
+Date:   Mon Apr 22 14:38:18 2024 +0200
+
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ git cherry-pick 05002746c969b73965195bda7f3585f539440b91
+[ft/contact-page 634d797] team.html page
+ Date: Mon Apr 22 17:49:09 2024 +0200
+ 2 files changed, 99 insertions(+)
+ create mode 100644 team
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ ls
+README.md  about.html  home.html  services.html  team
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ vi contact.html
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ git add .
+warning: in the working copy of 'contact.html', LF will be replaced by CRLF the next time Git touches it
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ git commit -m"creating contact page"
+[ft/contact-page 26adcd2] creating contact page
+ 1 file changed, 27 insertions(+)
+ create mode 100644 contact.html
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ git push
+fatal: The current branch ft/contact-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/contact-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ git push --set-upstream origin ft/contact-page
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 1.44 KiB | 739.00 KiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/Kevin-gram/Gym-Git-Exercise-Solutions-/pull/new/ft/contact-page
+remote:
+To https://github.com/Kevin-gram/Gym-Git-Exercise-Solutions-.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+branch 'ft/contact-page' set up to track 'origin/ft/contact-page'.
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ git branch ft/faq-page
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ vi faq.html
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git add .
+warning: in the working copy of 'faq.html', LF will be replaced by CRLF the next time Git touches it
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git commit -m"faqhtml"
+[ft/faq-page 54526ec] faqhtml
+ 1 file changed, 23 insertions(+)
+ create mode 100644 faq.html
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git push
+fatal: The current branch ft/faq-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/faq-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git push --set-upstream origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 551 bytes | 551.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/Kevin-gram/Gym-Git-Exercise-Solutions-/pull/new/ft/faq-page
+remote:
+To https://github.com/Kevin-gram/Gym-Git-Exercise-Solutions-.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+branch 'ft/faq-page' set up to track 'origin/ft/faq-page'.
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git log
+commit 54526ece8b8e41c428ef446ad7cde2134e9d9aab (HEAD -> ft/faq-page, origin/ft/faq-page)
+Author: kevin-gram <k.nyiringan@alustudent.com>
+Date:   Mon Apr 22 19:59:46 2024 +0200
+
+    faqhtml
+
+commit 26adcd2e04e5f0ef402813a7b7e6462c508199cd (origin/ft/contact-page, ft/contact-page)
+Author: kevin-gram <k.nyiringan@alustudent.com>
+Date:   Mon Apr 22 19:45:53 2024 +0200
+
+    creating contact page
+
+commit 634d797bff32e71616056f9369f7dffb0ca31eee
+Author: kevin-gram <k.nyiringan@alustudent.com>
+Date:   Mon Apr 22 17:49:09 2024 +0200
+
+    team.html page
+
+commit 2dd984cece9dc2d28c58aa373d3a540c6c5e892e (origin/main, main)
+Merge: 61ba0f7 faeb0cc
+Author: Kevin_Nyiringango <116556392+Kevin-gram@users.noreply.github.com>
+Date:   Mon Apr 22 17:19:25 2024 +0200
+
+    Merge pull request #3 from Kevin-gram/ft/bundle-2
+
+    bundel 2 EXERCISE 1
+
+commit 61ba0f77ce49c7831812c0ff4bee3f8562131c9c
+Author: kevin-gram <k.nyiringan@alustudent.com>
+Date:   Mon Apr 22 17:09:48 2024 +0200
+
+    editing the services IN MAIN branch
+
+commit faeb0cc431c0f687021464c860dc0ded1c28e267 (origin/ft/bundle-2, ft/bundle-2)
+Author: kevin-gram <k.nyiringan@alustudent.com>
+Date:   Mon Apr 22 16:45:41 2024 +0200
+
+    bundel 2 EXERCISE 1
+
+commit 3a98acd433900307a95e05780b6058ba9e7100d3
+Merge: 081580f 8ffb5c5
+Author: MANZI Mike <48416679+MikeManzi@users.noreply.github.com>
+Date:   Mon Apr 22 16:38:41 2024 +0200
+
+    Merge pull request #1 from Kevin-gram/ft/bundle-2
+
+    bundel 2
+
+commit 8ffb5c567013cb7ac9e662701c76dcf61b4efb41
+Author: kevin-gram <k.nyiringan@alustudent.com>
+Date:   Mon Apr 22 16:26:25 2024 +0200
+
+    bundel 2
+
+commit 081580f8273a735b4223a95a29784d49761bdf8d
+Author: kevin-gram <k.nyiringan@alustudent.com>
+Date:   Mon Apr 22 16:11:59 2024 +0200
+
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git revert 54526ece8b8e41c428ef446ad7cde2134e9d9aab
+[ft/faq-page 0593f5a] Revert "faqhtml"
+ 1 file changed, 23 deletions(-)
+ delete mode 100644 faq.html
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git log
+commit 0593f5ab49521d301e62c727410feed1e776770c (HEAD -> ft/faq-page)
+Author: kevin-gram <k.nyiringan@alustudent.com>
+Date:   Mon Apr 22 20:05:05 2024 +0200
+
+    Revert "faqhtml"
+
+    This reverts commit 54526ece8b8e41c428ef446ad7cde2134e9d9aab.
+
+commit 54526ece8b8e41c428ef446ad7cde2134e9d9aab (origin/ft/faq-page)
+Author: kevin-gram <k.nyiringan@alustudent.com>
+Date:   Mon Apr 22 19:59:46 2024 +0200
+
+    faqhtml
+
+commit 26adcd2e04e5f0ef402813a7b7e6462c508199cd (origin/ft/contact-page, ft/contact-page)
+Author: kevin-gram <k.nyiringan@alustudent.com>
+Date:   Mon Apr 22 19:45:53 2024 +0200
+
+    creating contact page
+
+commit 634d797bff32e71616056f9369f7dffb0ca31eee
+Author: kevin-gram <k.nyiringan@alustudent.com>
+Date:   Mon Apr 22 17:49:09 2024 +0200
+
+    team.html page
+
+commit 2dd984cece9dc2d28c58aa373d3a540c6c5e892e (origin/main, main)
+Merge: 61ba0f7 faeb0cc
+Author: Kevin_Nyiringango <116556392+Kevin-gram@users.noreply.github.com>
+Date:   Mon Apr 22 17:19:25 2024 +0200
+
+    Merge pull request #3 from Kevin-gram/ft/bundle-2
+
+    bundel 2 EXERCISE 1
+
+commit 61ba0f77ce49c7831812c0ff4bee3f8562131c9c
+Author: kevin-gram <k.nyiringan@alustudent.com>
+Date:   Mon Apr 22 17:09:48 2024 +0200
+
+    editing the services IN MAIN branch
+
+commit faeb0cc431c0f687021464c860dc0ded1c28e267 (origin/ft/bundle-2, ft/bundle-2)
+Author: kevin-gram <k.nyiringan@alustudent.com>
+Date:   Mon Apr 22 16:45:41 2024 +0200
+
+    bundel 2 EXERCISE 1
+
+commit 3a98acd433900307a95e05780b6058ba9e7100d3
+Merge: 081580f 8ffb5c5
+Author: MANZI Mike <48416679+MikeManzi@users.noreply.github.com>
+Date:   Mon Apr 22 16:38:41 2024 +0200
+
+    Merge pull request #1 from Kevin-gram/ft/bundle-2
+
+    bundel 2
+
+commit 8ffb5c567013cb7ac9e662701c76dcf61b4efb41
+Author: kevin-gram <k.nyiringan@alustudent.com>
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ ls
+README.md  about.html  contact.html  home.html  services.html  team
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ vi team
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git add .
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git commit -m"reverting changes "
+On branch ft/faq-page
+Your branch is ahead of 'origin/ft/faq-page' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 255 bytes | 255.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Kevin-gram/Gym-Git-Exercise-Solutions-.git
+   54526ec..0593f5a  ft/faq-page -> ft/faq-page
+
