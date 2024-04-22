@@ -744,5 +744,226 @@ Writing objects: 100% (3/3), 304 bytes | 304.00 KiB/s, done.
 Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/Kevin-gram/Gym-Git-Exercise-Solutions-.git
-   4f75d3f..96c8689  main -> main
+   4f75d3f..96c8689  ma
+   in -> main
+/////////////////////bundel 5 exercise 2////////////
+
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git clone https://github.com/Kevin-gram/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (10/10), done.
+error: RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 0
+error: 4044 bytes of body are still expected
+fetch-pack: unexpected disconnect while reading sideband packet
+fatal: early EOF
+fatal: fetch-pack: invalid index-pack output
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git clone https://github.com/Kevin-gram/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 107 (delta 5), reused 4 (delta 4), pack-reused 93
+Receiving objects: 100% (107/107), 1.95 MiB | 2.17 MiB/s, done.
+Resolving deltas: 100% (5/5), done.
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ cd git-cafe-exercise/
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ ls
+README.md  css/     index-1.html  index-3.html  index.html
+bat/       images/  index-2.html  index-4.html  js/
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ vi index.html
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git commit -m 'changing index.html file '
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git add .
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git commit -m 'changing index.html file '
+[main bad5552] changing index.html file
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 333 bytes | 333.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Kevin-gram/git-cafe-exercise.git
+   d1d3f9c..bad5552  main -> main
+
+
+////////////////bundel 5 exercise 2//////////////
+
+
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git clone https://github.com/Kevin-gram/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (10/10), done.
+error: RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 0
+error: 4044 bytes of body are still expected
+fetch-pack: unexpected disconnect while reading sideband packet
+fatal: early EOF
+fatal: fetch-pack: invalid index-pack output
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git clone https://github.com/Kevin-gram/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 107 (delta 5), reused 4 (delta 4), pack-reused 93
+Receiving objects: 100% (107/107), 1.95 MiB | 2.17 MiB/s, done.
+Resolving deltas: 100% (5/5), done.
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ cd git-cafe-exercise/
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ ls
+README.md  css/     index-1.html  index-3.html  index.html
+bat/       images/  index-2.html  index-4.html  js/
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ vi index.html
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git commit -m 'changing index.html file '
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git add .
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git commit -m 'changing index.html file '
+[main bad5552] changing index.html file
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 333 bytes | 333.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Kevin-gram/git-cafe-exercise.git
+   d1d3f9c..bad5552  main -> main
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ cd ..
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ vi README.md
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git add .
+warning: adding embedded git repository: git-cafe-exercise
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> git-cafe-exercise
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached git-cafe-exercise
+hint:
+hint: See "git help submodule" for more information.
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git rm -r git-cafe-exercise/
+fatal: could not lookup name for submodule 'git-cafe-exercise'
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ cd ..
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects (dev)
+$ git clone https://github.com/Kevin-gram/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+fatal: unable to access 'https://github.com/Kevin-gram/git-cafe-exercise.git/': Recv failure: Connection was reset
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects (dev)
+$ git clone https://github.com/Kevin-gram/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 110, done.
+remote: Counting objects: 100% (17/17), done.
+remote: Compressing objects: 100% (12/12), done.
+error: RPC failed; curl 92 HTTP/2 stream 5 was not closed cleanly: CANCEL (err 8)
+error: 6568 bytes of body are still expected
+fetch-pack: unexpected disconnect while reading sideband packet
+fatal: early EOF
+fatal: fetch-pack: invalid index-pack output
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects (dev)
+$ git clone https://github.com/Kevin-gram/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 110, done.
+remote: Counting objects: 100% (17/17), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 110 (delta 7), reused 6 (delta 5), pack-reused 93
+Receiving objects: 100% (110/110), 1.95 MiB | 199.00 KiB/s, done.
+Resolving deltas: 100% (7/7), done.
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects (dev)
+$ vi index.html
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects (dev)
+$ cd git-cafe-exercise/
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/git-cafe-exercise (main)
+$ vi index.html
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/git-cafe-exercise (main)
+$ git commit -m 'changing index.html file '
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/git-cafe-exercise (main)
+$ git add .
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/git-cafe-exercise (main)
+$ git commit -m 'changing index.html file '
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
 
