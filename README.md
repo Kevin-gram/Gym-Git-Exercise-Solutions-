@@ -2,6 +2,8 @@
 
 
 
+
+
 The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Solutions (dev)
 $ cd ..
 
@@ -370,4 +372,79 @@ branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
 
 The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (ft/bundle-2)
 $
+
+
+/////////////////////// Bundel4 exercise 1//////////////
+
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git remote add git-copy  https://github.com/Kevin-gram/Gym-Exercise-.git
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git remote
+git-copy
+origin
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ vi home.html
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git add .
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git commit -m"Editing the home page !!!"
+git commit -m"Editing the home page git add .!"
+[main 270b99f] Editing the home page git add .!
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git push origin
+fatal: unable to access 'https://github.com/Kevin-gram/Gym-Git-Exercise-Solutions-.git/': Could not resolve host: github.com
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 305 bytes | 305.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Kevin-gram/Gym-Git-Exercise-Solutions-.git
+   2dd984c..270b99f  main -> main
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git push git-copy
+To https://github.com/Kevin-gram/Gym-Exercise-.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Kevin-gram/Gym-Exercise-.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git pull git-copy
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 213 bytes | 15.00 KiB/s, done.
+From https://github.com/Kevin-gram/Gym-Exercise-
+ * [new branch]      main       -> git-copy/main
+You asked to pull from the remote 'git-copy', but did not specify
+a branch. Because this is not the default configured remote
+for your current branch, you must specify a branch on the command line.
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/Gym-Git-Exercise-Solutions (main)
+$ git push --force git-copy
+Enumerating objects: 38, done.
+Counting objects: 100% (38/38), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (30/30), done.
+Writing objects: 100% (38/38), 9.84 KiB | 1007.00 KiB/s, done.
+Total 38 (delta 11), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (11/11), done.
+To https://github.com/Kevin-gram/Gym-Exercise-.git
+ + d9a4bb7...270b99f main -> main (forced update)
 
