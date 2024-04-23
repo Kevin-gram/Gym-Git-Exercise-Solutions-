@@ -966,4 +966,39 @@ On branch main
 Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
+/////////////////bundel 6 exercise 3/4//////////
+
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/git-cafe-exercise (main)
+$ git checkout bug-fix-branch
+Switched to branch 'bug-fix-branch'
+Your branch is up to date with 'origin/bug-fix-branch'.
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/git-cafe-exercise (bug-fix-branch)
+$ ls
+README.md  css/     index-1.html  index-3.html  index.html
+bat/       images/  index-2.html  index-4.html  js/
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/git-cafe-exercise (bug-fix-branch)
+$ vi index-4.html
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/git-cafe-exercise (bug-fix-branch)
+$ git add .
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/git-cafe-exercise (bug-fix-branch)
+$ git commit -m"phone number fix in index-4.html"
+[bug-fix-branch 03a99a0] phone number fix in index-4.html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+The Gym@DESKTOP-FTJIN5G MINGW64 ~/Documents/projects/git-cafe-exercise (bug-fix-branch)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 314 bytes | 314.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Kevin-gram/git-cafe-exercise.git
+   3359d6b..03a99a0  bug-fix-branch -> bug-fix-branch
 
